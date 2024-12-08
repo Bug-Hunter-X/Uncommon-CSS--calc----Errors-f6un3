@@ -1,0 +1,22 @@
+/* Correct use of calc() */
+.element {
+  width: calc(50% + 10px);
+  height: calc(100px * 2);
+  margin: calc(10% - 5px);
+}
+
+/* Avoid incompatible units */
+.anotherElement {
+  /* Correct way to combine percentages and pixels */
+  width: calc(50% - 20px);
+}
+
+/* Correct spacing within calc()*/
+.anotherElement2 {
+  width: calc( 50% + 10px ); /*Extra spaces are allowed */
+}
+
+/* Correct use of operators */
+.anotherElement3 {
+  width: calc(100px / 2);
+} 
